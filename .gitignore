@@ -1,18 +1,38 @@
+# =============================
+# ✅ Node & Package Managers
+# =============================
 node_modules/
 .pnpm-debug.log*
 package-lock.json
 yarn.lock
 *.log
+*.tgz
+
+# =============================
+# ✅ Next.js & Build Outputs
+# =============================
 .next/
 out/
 dist/
 build/
 .vercel/
+
+# =============================
+# ✅ Environment Variables
+# =============================
 .env
 .env.*
 !.env.example
+
+# =============================
+# ✅ TypeScript
+# =============================
 *.tsbuildinfo
 next-env.d.ts
+
+# =============================
+# ✅ System & Editor Files
+# =============================
 .DS_Store
 Thumbs.db
 .vscode/
@@ -20,15 +40,28 @@ Thumbs.db
 *.swp
 *.swo
 *.local
-# Ignore temporary files created by GitHub Actions
+*.cache
+.cache/
+
+# =============================
+# ✅ GitHub Actions
+# =============================
 .github/workflows/*.bak
 .github/workflows/*.tmp
+
+# =============================
+# ✅ Docker
+# =============================
 .dockerignore
 Dockerfile*
 docker-compose.yml
 docker-compose.*.yml
 *.pid
 *.sock
+
+# =============================
+# ✅ Testing (Vitest / Jest / Cypress)
+# =============================
 coverage/
 test-results/
 junit.xml
@@ -36,9 +69,9 @@ junit.xml
 .vitest/
 cypress/videos/
 cypress/screenshots/
-*.log
-*.tgz
+
+# =============================
+# ✅ Miscellaneous
+# =============================
 *.bak
 *.tmp
-*.cache
-.cache/
